@@ -4,14 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>Samuel Morton's personal website</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 15px;
+            background-color: #f4f6f8;
+            color: #333;
+
+        }
+        .container{
+            max-width:900px;
+            margin:0 auto;
+            background-color: #ffffff;
+            padding:30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+        }
+        h1{
+            color: #0056b2;
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+        .content-grid{
+            display: flex;
+            gap: 20px;
+        }
+        .card{
+            flex:1;
+            background-color: #f8f9fb;
+            padding: 20px;
+            border-left: 4px solid #0056b3;
+            border-radius: 4px;
+
+        }
+        h2{
+            color: #222;
+            font-size:1.5rem;
+            margin-top: 0;
+
+
+        }
+        a{
+            color:#0056b4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+            @media (max-width: 768px) {
+            body{
+                padding: 10px;
+            }
+            .container{
+                padding:15px;
+            }
+            h1{
+                font-size: 1.5rem;
+            }
+            .content-grid{
+                flex-direction: column;
+                gap: 15px;
+            }
+            .card{
+                padding: 15px;
+            }
+            a{
+                display:inline-block;
+                padding: 8px 0;
+
+            }
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1> Welcome to my website</h1>
-    <p title="About me">
-        Hello! I'm <strong>Sam Morton, and I'm currently studying for an MSc in Computer Science at Sheffield Hallam University. </strong>
-    </p>
-    <h2>About my studies</h2>
-    <p> I'm currently learning web develoment through usage of HTML and Javascript having completed modules in Python and SQL. I'm enjoying building web applications and exploring new subject areas.
-        In January I'll commence writing my Dissertation for the MSc, drawing on some of the topics learned thus far, hopefully relating its application to AI.
-     </p>
+    <div class="container">
+        <header>
+            <h1> Welcome to my website</h1>
+            <p title="About me">
+                Hello! I'm <strong>Sam Morton, and I'm currently studying for an MSc in Computer Science at Sheffield Hallam University. </strong>
+
+        </header>
+        <div class="content-grid">
+            <section class="card">
+                <h2>About my studies</h2>
+                <p>
+                     I'm currently learning web develoment through usage of HTML and Javascript having completed modules in Python and SQL. I'm enjoying building web applications and exploring new subject areas.
+                    In January I'll commence writing my Dissertation for the MSc, drawing on some of the topics learned thus far, hopefully relating its application to AI.
+                </p>
+
+            </section>
+        </div>    
+    </div>
 </body>
+</html>
