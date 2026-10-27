@@ -1,2 +1,0 @@
-# WebtechnologiesSJM
-My first webpage
